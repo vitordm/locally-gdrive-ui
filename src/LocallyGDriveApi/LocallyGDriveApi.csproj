@@ -22,6 +22,7 @@
     <Folder Include="Shared/Utils/" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="../ChatHub/ChatService.csproj" />
     <ProjectReference Include="../GoogleServices/GoogleServices.csproj" />
   </ItemGroup>
 </Project>

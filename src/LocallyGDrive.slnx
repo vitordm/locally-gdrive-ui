@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ChatHub/ChatService.csproj" />
   <Project Path="GoogleServices/GoogleServices.csproj" />
   <Project Path="LocallyGDriveApi/LocallyGDriveApi.csproj" />
 </Solution>

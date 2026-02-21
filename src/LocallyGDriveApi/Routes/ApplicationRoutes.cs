@@ -1,4 +1,5 @@
 using System;
+using ChatService.Hubs;
 
 namespace LocallyGDriveApi.Routes;
 
@@ -13,6 +14,13 @@ public static class ApplicationRoutes
 
         endpoints.MapMethods("/ping", ["GET", "POST"], () => Results.Ok("Pong"))
             .WithName("Ping");
+
+        RegisterChatHubs(endpoints);
+    }
+
+    public static void RegisterChatHubs(this IEndpointRouteBuilder endpoints)
+    {
+        endpoints.MapHub<ChatHub>("/chat");
     }
 
 }
