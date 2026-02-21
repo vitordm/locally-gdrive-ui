@@ -1,4 +1,7 @@
 using LocallyGDriveApi.Logging;
+using LocallyGDriveApi.Middlewares;
+using LocallyGDriveApi.Routes;
+using LocallyGDriveApi.Shared;
 using Newtonsoft.Json;
 using Serilog;
 
@@ -19,6 +22,7 @@ builder.Host.UseSerilog((context, services, loggerConfiguration) =>
 
 
 builder.Configuration.AddEnvironmentVariables();
+builder.Services.AddServices(builder.Configuration);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -41,6 +45,8 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
+app.UseMiddlewares();
 app.MapControllers();
+app.RegisterApplicatonRoutes();
 
 app.Run();

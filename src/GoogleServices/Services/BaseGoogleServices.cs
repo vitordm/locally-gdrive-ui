@@ -11,8 +11,10 @@ public abstract class BaseGoogleServices(IOptions<GoogleServicesSettings> settin
     protected async Task<GoogleCredential> GetGoogleCredentialAsync(CancellationToken cancellationToken)
     {
         return await CredentialFactory
-                        .FromFileAsync<GoogleCredential>(
-                            _settings.JsonConfigurationPath, cancellationToken
+                        .FromFileAsync(
+                            credentialPath: _settings.JsonConfigurationPath, 
+                            credentialType: JsonCredentialParameters.ServiceAccountCredentialType,
+                            cancellationToken: cancellationToken
                         );
     }
 

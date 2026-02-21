@@ -8,7 +8,7 @@
       "applicationUrl": "http://localhost:5020",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "GOOGLE_APPLICATION_CREDENTIALS" : "/Users/vitor/Dev/vitordm/locally-gdrive-ui/.local/client_secret_565735187167-sq0uejhgsamlpdoi3ughge144t0bq5if.apps.googleusercontent.com.json"
+        "GOOGLE_APPLICATION_CREDENTIALS" : "/Users/vitor/Dev/vitordm/locally-gdrive-ui/.local/my-home-project-487703-a93f3962f8a5.json"
       }
     },
     "https": {
@@ -18,7 +18,7 @@
       "applicationUrl": "https://localhost:7132;http://localhost:5020",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "GOOGLE_APPLICATION_CREDENTIALS" : "/Users/vitor/Dev/vitordm/locally-gdrive-ui/.local/client_secret_565735187167-sq0uejhgsamlpdoi3ughge144t0bq5if.apps.googleusercontent.com.json"
+        "GOOGLE_APPLICATION_CREDENTIALS" : "/Users/vitor/Dev/vitordm/locally-gdrive-ui/.local/my-home-project-487703-a93f3962f8a5.json"
       }
     }
   }

@@ -14,8 +14,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logging/" />
+    <Folder Include="Middlewares/" />
+    <Folder Include="Routes/" />
     <Folder Include="Services/" />
     <Folder Include="Shared/" />
+    <Folder Include="Shared/Helpers/" />
     <Folder Include="Shared/Utils/" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../GoogleServices/GoogleServices.csproj" />
   </ItemGroup>
 </Project>
